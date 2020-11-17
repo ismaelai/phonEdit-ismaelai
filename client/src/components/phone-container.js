@@ -13,17 +13,17 @@ const PhoneContainer = ({ modalIsOpen, closeModal, phoneDetail }) => {
           </button>
           <div className="container">
             <h3>{phoneDetail.title}</h3>
-            <h5>Specifications:</h5>
             <picture>
               <img
                 src={phoneDetail.img}
                 alt={phoneDetail.title}
                 className="display"
-              />
+                />
             </picture>
               <a href="/" className="link-manual" >Read Manual of Use</a>
           </div>
           <section className="details">
+          <h5>SPECIFICATIONS:</h5>
             <dl>
               {Object.entries(phoneDetail.quick_spec).map(([key, value]) => {
                 const formattedKey = key.replace('_', ' ');

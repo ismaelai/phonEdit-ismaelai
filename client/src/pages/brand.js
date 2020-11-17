@@ -36,10 +36,7 @@ const Brand = () => {
           <div className="wrapper-two">
             <h3>SELECT YOUR PHONE AND CHECK INFORMATION</h3>
             <p className="line">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-              aliquid obcaecati repudiandae assumenda, ipsam ipsum illum, vel
-              sapiente non perspiciatis dolorum numquam magni earum veniam
-              eligendi quis ipsa, quod accusamus!
+              Click on the brand you are interested in to show the list of available models up-to-date: 
             </p>
           </div>
           {phonesByBrandId && <PhoneListByBrand id={phonesByBrandId} />}

@@ -34,22 +34,17 @@
     border-radius: 1rem;
       margin-left: 10vw;
       h3 {
+        min-width: 15vw;
         font-family: 'Fira Sans Extra Condensed', sans-serif;
         font-size: 2rem;
         color: rgba(179, 179, 54, 1);
         border-left: 3px solid rgba(255, 255, 255, 1);
         padding-left: 2rem;
-        margin: 0;
-      }
-      h5 {
-        font-family: 'Fira Sans Extra Condensed', sans-serif;
-        font-size: 1.25rem;
-        font-weight: 400;
-        color:rgba(128, 130, 133, 1);
-        margin-top: 1rem;
+        margin: 0 0 2rem;
       }
       .display {
-        min-width: 10vw;
+        min-width: 8vw;
+        max-width: 12vw;
         margin-bottom: 2rem;
       }
       .link-manual {
@@ -61,17 +56,26 @@
         font-weight: bolder;
       }
     }
-  .details {
-  min-width: 40vw;
-  min-height: 40vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  margin-left: 10vw;
-  background-color:rgba(179, 179, 54, 0.3);
+    .details {
+      min-width: 40vw;
+      min-height: 40vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      margin-left: 5vw;
+      background-color:rgba(179, 179, 54, 0.3);
+       h5 {
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: rgba(179, 179, 54, 1);
+        margin-top: 0.3rem;
+        margin-left: 3vw;
+        align-self: flex-start;
+      }
   .specs {
     display: flex;
     flex-direction: row;
@@ -88,6 +92,8 @@
       margin-right: 5rem;
       color: rgba(179, 179, 54, 1);
       margin-top: 0.3rem;
+      min-width: 10vw;
+
     }
   }
   }
