@@ -8,19 +8,30 @@ const PhoneContainer = ({ modalIsOpen, closeModal, phoneDetail }) => {
     <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className="modal">
       {modalIsOpen && (
         <>
-          <button onClick={closeModal}>Close</button>
-          <section>
-            <picture>
-              <img src={phoneDetail.img} alt={phoneDetail.title} />
-            </picture>
+          <button onClick={closeModal} className="close">
+            back to list
+          </button>
+          <div className="container">
             <h3>{phoneDetail.title}</h3>
+            <picture>
+              <img
+                src={phoneDetail.img}
+                alt={phoneDetail.title}
+                className="display"
+                />
+            </picture>
+              <a href="/" className="link-manual" >Read Manual of Use</a>
+          </div>
+          <section className="details">
+          <h5>SPECIFICATIONS:</h5>
             <dl>
               {Object.entries(phoneDetail.quick_spec).map(([key, value]) => {
                 const formattedKey = key.replace('_', ' ');
+                formattedKey.toUpperCase();
                 return (
-                  <div key={key}>
-                    <dt>{formattedKey}</dt>
-                    <dd>{value}</dd>
+                  <div key={key} className="specs">
+                    <dt className="subs">{formattedKey.toUpperCase()}</dt>
+                    <dd className="text">{value}</dd>
                   </div>
                 );
               })}
